@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    
+    <style name="Theme_AudioDialog">
+        <!--把背景设为透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--设为浮动的-->
+        <item name="android:windowIsFloating">true</item>
+        <!--窗口设为透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--dialog的背景是否昏暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

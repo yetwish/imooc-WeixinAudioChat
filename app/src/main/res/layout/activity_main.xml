@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/main_lv_chat"
+        android:layout_weight="1"
+        android:dividerHeight="10dp"
+        android:divider="@null"
+        android:background="@color/chat_list_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.yetwish.weixinaudiochat.widget.RecorderButton
+        android:id="@+id/main_btn_recorder"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="@string/btn_normal"
+        android:textColor="@color/btn_text"
+        android:textSize="18sp"
+        android:background="@drawable/btn_normal_shape"
+        android:minHeight="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+     <View android:layout_width="match_parent"
+           android:layout_height="1dp"
+         android:background="@color/color_gray"/>
+    </FrameLayout>
+
+</LinearLayout>
